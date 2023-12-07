@@ -24,8 +24,8 @@
 
 <body>
 
-    <!-- Keranjang -->
     <div class="container">
+        <!-- Nav -->
         <nav>
             <h2 class="logo"><a href="#">LogoClient</a></h2>
             <ul id="navMenu" class="navMenu">
@@ -33,13 +33,16 @@
                 <li><a href="javascript:void(0)" id="keranjangBtn">Keranjang</a></li>
                 <li><a href="javascript:void(0)">Transaksi</a></li>
                 <li><a href="javascript:void(0)">Wishlist</a></li>
-                <li><a href="javascript:void(0)">Akun</a></li>
+                <li><a href="alert.html">Akun</a></li>
             </ul>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
         </nav>
 
+        <!-- Toast Notif -->
+        <div id="toastBox">
+        </div>
 
         <!-- JumboTron Start -->
         <section id="jumbotron">
@@ -91,7 +94,7 @@
                 <p class="deskripsi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, similique!</p>
                 <p class="price">Rp. 150.000</p>
             </div>
-            <div class="card dis4 addToCart" data-id="0004" data-name="ogitect Keyboad">
+            <div class="card dis4 addToCart" data-id="0004" data-name="Logitect Keyboad">
                 <img src="https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                     alt="">
                 <h2>Logitect Keyboad</h2>
@@ -116,9 +119,11 @@
 
         <!-- You Need End -->
 
+        <!-- Keranjang -->
+
         <section id="keranjang">
             <div class="keranjangContainer">
-                <span class="close">&times;</span>
+                <i class="fa-solid fa-x close"></i>
                 <h1 class="header centerText">Isi Keranjang Anda</h1>
                 <ul id="cartItems" class="cartItems">
                 </ul>
@@ -159,6 +164,7 @@
 
     </script>
     <script src="js/keranjang.js"></script>
+    <script src="https://kit.fontawesome.com/e49364ca57.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

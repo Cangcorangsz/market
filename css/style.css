@@ -4,6 +4,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+.alert {
+    background-color: aquamarine;
+}
+
 html {
     overflow-x: hidden;
 }

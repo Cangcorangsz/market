@@ -4,6 +4,8 @@ const keranjangBtn = document.getElementById("keranjangBtn");
 const span = document.getElementsByClassName("close")[0];
 const addToCartButtons = document.querySelectorAll(".addToCart");
 const cartItems = document.getElementById("cartItems")
+const toastBox = document.getElementById("toastBox");
+
 
 // Nav > keranjang
 keranjangBtn.onclick = function () {
@@ -35,12 +37,33 @@ function addToCart(event) {
     const productName = card.dataset.name;
     console.log(`${productName} (ID: ${productId}) Added to cart`)
 
+    showToast(`<i class="fa-solid fa-cart-shopping"></i> ${productName} telah ditambahkan ke keranjang`);
+
     addToCartList(productId, productName);
+}
+
+// Show Toast Notifaction 
+
+function showToast(msg) {
+    const toast = document.createElement("div");
+    toast.classList.add("toast");
+    toast.innerHTML = msg;
+    toastBox.appendChild(toast)
+
+    setTimeout(() => {
+        toast.remove()
+    }, 2000)
 }
 
 // addToCartList Function
 function addToCartList(productId, productName) {
     const listItem = document.createElement("li");
-    listItem.textContent = `${productName} (ID: ${productId})`;
+    listItem.innerHTML = `<p>${productName} (ID: ${productId})<p> <i class="fa-solid fa-trash-can deleteList"></i>`;
     cartItems.appendChild(listItem);
+
+    // Menambahkan event listener ke deleteList pada listItem yang baru dibuat
+    const deleteListItem = listItem.querySelector('.deleteList');
+    deleteListItem.addEventListener('click', function () {
+        listItem.remove(); // Menghapus listItem saat deleteList di-klik
+    });
 }
