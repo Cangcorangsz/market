@@ -15,120 +15,144 @@
         font-family: 'Raleway', sans-serif;
      -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-        , initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/keranjang.css">
     <title>Market</title>
 </head>
 
 <body>
-    <nav>
-        <h2 class="logo"><a href="#">LogoClient</a></h2>
-        <ul id="navMenu" class="navMenu">
-            <li><a href="#">Beranda</a></li>
-            <li><a href="#">Keranjang</a></li>
-            <li><a href="#">Transaksi</a></li>
-            <li><a href="#">Wishlist</a></li>
-            <li><a href="#">Akun</a></li>
-        </ul>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </nav>
 
+    <div class="container">
+        <!-- Nav -->
+        <nav>
+            <h2 class="logo"><a href="#">LogoClient</a></h2>
+            <ul id="navMenu" class="navMenu">
+                <li><a href="javascript:void(0)">Beranda</a></li>
+                <li><a href="javascript:void(0)" id="keranjangBtn">Keranjang</a></li>
+                <li><a href="javascript:void(0)">Transaksi</a></li>
+                <li><a href="javascript:void(0)">Wishlist</a></li>
+                <li><a href="alert.html">Akun</a></li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
 
-    <!-- JumboTron Start -->
-    <section id="jumbotron">
-        <img src="https://images.unsplash.com/photo-1657664072470-99b02c2143f2?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="person sitting on gaming chair while playing video game">
-        <p class="centered">Break Free, Game On</p>
-        <!-- <div class="centerbos">
+        <!-- Toast Notif -->
+        <div id="toastBox">
+        </div>
+
+        <!-- JumboTron Start -->
+        <section id="jumbotron">
+            <img src="https://images.unsplash.com/photo-1657664072470-99b02c2143f2?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="person sitting on gaming chair while playing video game">
+            <p class="centered">Break Free, Game On</p>
+            <!-- <div class="centerbos">
         </div> -->
-    </section>
+        </section>
 
-    <!-- JumboTron End -->
+        <!-- JumboTron End -->
 
-    <!-- Discover Start-->
+        <!-- Discover Start-->
 
-    <section id="discover">
-        <h1 class="header">Discover More</h1>
-        <img src="https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="" class="img1">
-        <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=1167&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="" class="img2">
-        <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=1165&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="" class="img3">
-    </section>
+        <section id="discover">
+            <h1 class="header">Discover More</h1>
+            <img src="https://images.unsplash.com/photo-1618384887929-16ec33fab9ef?q=80&w=1160&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="" class="img1">
+            <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?q=80&w=1167&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="" class="img2">
+            <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?q=80&w=1165&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="" class="img3">
+        </section>
 
-    <!-- Discover End-->
+        <!-- Discover End-->
 
-    <!-- Find What You Need -->
+        <!-- Find What You Need -->
 
-    <section id="find">
-        <h1 class="header">Find What You Need</h1>
-        <div class="card dis1">
-            <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?q=80&w=1028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="">
-            <h2>Logitect Mouse</h2>
-            <p class="deskripsi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, similique!</p>
-            <p class="price">Rp. 150.000</p>
-        </div>
-        <div class="card dis2">
-            <img src="https://images.unsplash.com/photo-1613141411244-0e4ac259d217?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="">
-            <h2>Gaming Mouse</h2>
-            <p class="deskripsi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, similique!</p>
-            <p class="price">Rp. 150.000</p>
-        </div>
-        <div class="card dis3">
-            <img src="https://images.unsplash.com/photo-1563297007-0686b7003af7?q=80&w=1517&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="">
-            <h2>Golitect Mouse</h2>
-            <p class="deskripsi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, similique!</p>
-            <p class="price">Rp. 150.000</p>
-        </div>
-        <div class="card dis4">
-            <img src="https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="">
-            <h2>Logitect Keyboad</h2>
-            <p class="deskripsi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, similique!</p>
-            <p class="price">Rp. 150.000</p>
-        </div>
-        <div class="card dis5">
-            <img src="https://images.unsplash.com/photo-1558050032-160f36233a07?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="">
-            <h2>Mechanical Keyboard</h2>
-            <p class="deskripsi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, similique!</p>
-            <p class="price">Rp. 150.000</p>
-        </div>
-        <div class="card dis6">
-            <img src="https://images.unsplash.com/photo-1622036832712-d77986bccedd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="">
-            <h2>GomiTech Keyboard</h2>
-            <p class="deskripsi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, similique!</p>
-            <p class="price">Rp. 150.000</p>
-        </div>
-    </section>
+        <section id="find">
+            <h1 class="header">Find What You Need</h1>
+            <div class="card dis1 addToCart" data-id="0001" data-name="Logitect Mouse">
+                <img src="https://images.unsplash.com/photo-1527814050087-3793815479db?q=80&w=1028&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <h2>Logitect Mouse</h2>
+                <p class="deskripsi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, similique!</p>
+                <p class="price">Rp. 150.000</p>
+            </div>
+            <div class="card dis2 addToCart" data-id="0002" data-name="Gravitech Mouse">
+                <img src="https://images.unsplash.com/photo-1613141411244-0e4ac259d217?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <h2>Gravitech Mouse</h2>
+                <p class="deskripsi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, similique!</p>
+                <p class="price">Rp. 150.000</p>
+            </div>
+            <div class="card dis3 addToCart" data-id="0003" data-name="Globo Mouse">
+                <img src="https://images.unsplash.com/photo-1563297007-0686b7003af7?q=80&w=1517&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <h2>Globo Mouse</h2>
+                <p class="deskripsi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, similique!</p>
+                <p class="price">Rp. 150.000</p>
+            </div>
+            <div class="card dis4 addToCart" data-id="0004" data-name="Logitect Keyboad">
+                <img src="https://images.unsplash.com/photo-1589578228447-e1a4e481c6c8?q=80&w=1632&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <h2>Logitect Keyboad</h2>
+                <p class="deskripsi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, similique!</p>
+                <p class="price">Rp. 150.000</p>
+            </div>
+            <div class="card dis5 addToCart" data-id="0005" data-name="VertexBoard">
+                <img src="https://images.unsplash.com/photo-1558050032-160f36233a07?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <h2>VertexBoard</h2>
+                <p class="deskripsi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, similique!</p>
+                <p class="price">Rp. 150.000</p>
+            </div>
+            <div class="card dis6 addToCart" data-id="0006" data-name="QuantumKeys">
+                <img src="https://images.unsplash.com/photo-1622036832712-d77986bccedd?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <h2>QuantumKeys</h2>
+                <p class="deskripsi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, similique!</p>
+                <p class="price">Rp. 150.000</p>
+            </div>
+        </section>
 
-    <!-- You Need End -->
+        <!-- You Need End -->
 
-    <!-- Footer -->
+        <!-- Keranjang -->
 
-    <footer>
-        <p>Created with
-            <?xml version="1.0" ?><svg id="Layer_1_1_" style="enable-background:new 0 0 16 16;" version="1.1"
-                viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" class="svg">
-                <path
-                    d="M8.612,2.347L8,2.997l-0.612-0.65c-1.69-1.795-4.43-1.795-6.12,0c-1.69,1.795-1.69,4.706,0,6.502l0.612,0.65L8,16  l6.12-6.502l0.612-0.65c1.69-1.795,1.69-4.706,0-6.502C13.042,0.551,10.302,0.551,8.612,2.347z" />
-            </svg>
-            by Dimas Rizki
-        </p>
-    </footer>
+        <section id="keranjang">
+            <div class="keranjangContainer">
+                <i class="fa-solid fa-x close"></i>
+                <h1 class="header centerText">Isi Keranjang Anda</h1>
+                <ul id="cartItems" class="cartItems">
+                </ul>
+                <Button type="button" class="button checkOut" id="checkOut">Check Out</Button>
+            </div>
+        </section>
+
+        <!-- Footer -->
+
+        <footer>
+            <p>Created with
+                <?xml version="1.0" ?><svg id="Layer_1_1_" style="enable-background:new 0 0 16 16;" version="1.1"
+                    viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" class="svg">
+                    <path
+                        d="M8.612,2.347L8,2.997l-0.612-0.65c-1.69-1.795-4.43-1.795-6.12,0c-1.69,1.795-1.69,4.706,0,6.502l0.612,0.65L8,16  l6.12-6.502l0.612-0.65c1.69-1.795,1.69-4.706,0-6.502C13.042,0.551,10.302,0.551,8.612,2.347z" />
+                </svg>
+                by Dimas Rizki
+            </p>
+        </footer>
+    </div>
+
 
     <script>
+        // Nav
         const navMenu = document.getElementById("navMenu");
 
+
+        // Nav responsive
         function myFunction() {
             if (navMenu.className === "navMenu") {
                 navMenu.className += " responsive";
@@ -136,7 +160,11 @@
                 navMenu.className = "navMenu";
             };
         };
+
+
     </script>
+    <script src="js/keranjang.js"></script>
+    <script src="https://kit.fontawesome.com/e49364ca57.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

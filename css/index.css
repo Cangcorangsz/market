@@ -1,0 +1,276 @@
+/* Jumbotron */
+
+#jumbotron {
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#jumbotron img {
+    filter: brightness(70%);
+    width: 80%;
+}
+
+#jumbotron p {
+    font-weight: bold;
+    color: rgb(241, 241, 241);
+    font-size: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Discover */
+
+#discover {
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "img1 img2"
+        "img1 img3";
+    grid-template-rows: 0.5fr 2fr;
+    width: 90%;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    margin: 2em auto;
+}
+
+#discover h1 {
+    grid-area: header;
+    justify-self: center;
+}
+
+#discover img {
+    border-radius: 10px;
+    width: 80%;
+}
+
+.img1 {
+    grid-area: img1;
+    align-self: center;
+    justify-self: end;
+}
+
+.img2 {
+    grid-area: img2;
+}
+
+.img3 {
+    grid-area: img3;
+}
+
+/* You Need */
+
+.card {
+    width: 80%;
+    box-shadow: 0 0 15px 1px black;
+    padding: 0 0 5% 0;
+    border-radius: 5px;
+    margin: 1em;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+.card:hover {
+    background-color: rgb(207, 207, 207);
+    filter: brightness(110%);
+}
+
+.card>img {
+    position: relative;
+    width: 100%;
+}
+
+
+.card>.price {
+    position: absolute;
+    font-size: 1em;
+    padding: 0.3em;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    color: white;
+    border-radius: 0 0 1em 0;
+}
+
+#find {
+    display: grid;
+    width: 90%;
+    margin: 2em auto;
+    grid-template-areas:
+        "header header header"
+        "dis1 dis2 dis3"
+        "dis4 dis5 dis6";
+    grid-template-rows: 0.2fr 1fr 1fr;
+    justify-items: center;
+}
+
+.card .deskripsi {
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+
+.card>h2 {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0.5em;
+    position: relative;
+}
+
+#find h1 {
+    grid-area: header;
+    align-self: center;
+}
+
+#find>.dis1 {
+    grid-area: dis1;
+}
+
+#find>.dis2 {
+    grid-area: dis2;
+}
+
+#find>.dis3 {
+    grid-area: dis3;
+}
+
+#find>.dis4 {
+    grid-area: dis4;
+}
+
+#find>.dis5 {
+    grid-area: dis5;
+}
+
+#find>.dis6 {
+    grid-area: dis6;
+}
+
+/* <<<Responsives>>> */
+
+@media (max-width: 768px) {
+    /* ---Tablet--- */
+
+    /* Jumbotron start */
+
+    #jumbotron {
+        width: 100%;
+    }
+
+    #jumbotron>img {
+        width: 100%;
+    }
+
+    #jumbotron>p {
+        font-size: 1.8em;
+    }
+
+    /* Discover */
+
+    #discover {
+        row-gap: 1.5rem;
+        column-gap: 1.5rem;
+        margin: 3em auto;
+    }
+
+    #discover img {
+        border-radius: 10px;
+        width: 90%;
+    }
+
+    /* You Need */
+
+    #find {
+        display: grid;
+        width: 90%;
+        margin: 3em auto;
+        grid-template-areas:
+            "header header"
+            "dis1 dis2"
+            "dis3 dis4"
+            "dis5 dis6";
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        grid-template-rows: auto;
+    }
+}
+
+@media (max-width: 544px) {
+
+    /* Jumbotron Start */
+
+    #jumbotron>p {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 425px) {
+    /* ---Mobile L--- */
+
+    /* Jumbotron Start */
+
+    #jumbotron>p {
+        font-size: 1.2em;
+    }
+
+    #jumbotron img {
+        position: relative;
+    }
+
+    /* Discover Start */
+
+    #discover {
+        width: 100%;
+        margin: 1.5em auto;
+    }
+
+    /* You Need */
+
+    #find {
+        display: grid;
+        width: 100%;
+        margin: 1.5em auto;
+        grid-template-areas:
+            "header"
+            "dis1"
+            "dis2"
+            "dis3"
+            "dis4"
+            "dis5"
+            "dis6";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        justify-items: center;
+    }
+}
+
+@media (max-width: 375px) {
+    /* ---Mobile M--- */
+
+    /* Jumbotron Start */
+
+    #jumbotron p {
+        font-size: 1em;
+    }
+
+    /* Discover Start */
+
+    #discover {
+        row-gap: 0.7em;
+        column-gap: 0.7em;
+    }
+}
+
+@media (max-width: 320px) {
+    /* ---Mobile S--- */
+
+    /* Jumbotron Start */
+
+    #jumbotron>p {
+        font-size: 0.9em;
+    }
+}
