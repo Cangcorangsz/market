@@ -1,7 +1,7 @@
 // Nav > keranjang
 const keranjang = document.getElementById("keranjang");
 const keranjangBtn = document.getElementById("keranjangBtn");
-const span = document.getElementsByClassName("close")[0];
+const closeKeranjang = document.getElementById("closeKeranjang");
 const addToCartButtons = document.querySelectorAll(".addToCart");
 const cartItems = document.getElementById("cartItems")
 const toastBox = document.getElementById("toastBox");
@@ -12,7 +12,7 @@ keranjangBtn.onclick = function () {
     keranjang.style.display = "block";
 }
 
-span.onclick = function () {
+closeKeranjang.onclick = function () {
     keranjang.style.display = "none";
 }
 
