@@ -44,6 +44,7 @@
     list-style: none;
     overflow-y: auto;
     max-height: calc(90% - 2em);
+    scrollbar-gutter: stable;
 }
 
 .cartItems>li {
@@ -70,6 +71,7 @@
 }
 
 .checkOut {
+    border-radius: 5px;
     display: block;
     margin: auto;
     position: absolute;
