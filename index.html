@@ -115,6 +115,7 @@
                 <p class="deskripsi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, similique!</p>
                 <p class="price">Rp. 150.000</p>
             </div>
+            <a href="javascript:void(0)" id="more"><button>See More</button></a>
         </section>
 
         <!-- You Need End -->
@@ -153,31 +154,31 @@
                     </div>
                 </div>
                 <div class="register-form">
-                <h1 class="header centerText">Register</h1>
-                <div class="text-field">
-                    <input type="text" id="usernameRegister" required>
-                    <span></span>
-                    <label for="usernameRegister">Username</label>
-                </div>
-                <div class="text-field">
-                    <input type="email" id="emailRegister" required>
-                    <span></span>
-                    <label for="emailRegister">Email</label>
-                </div>
-                <div class="text-field">
-                    <input type="password" id="passwordRegister" required>
-                    <span></span>
-                    <label for="passwordRegister">Password</label>
-                </div>
-                <div class="text-field">
-                    <input type="password" id="confirmPasswordRegister" required>
-                    <span></span>
-                    <label for="corfirmPasswordRegister">Konfirmasi Password</label>
-                </div>
-                <input type="submit" value="Register">
-                <div class="login">
-                    Sudah pernah mendaftar? <a href="javascript:void(0)" id="loginDisini">Login disni</a>
-                </div>
+                    <h1 class="header centerText">Register</h1>
+                    <div class="text-field">
+                        <input type="text" id="usernameRegister" required>
+                        <span></span>
+                        <label for="usernameRegister">Username</label>
+                    </div>
+                    <div class="text-field">
+                        <input type="email" id="emailRegister" required>
+                        <span></span>
+                        <label for="emailRegister">Email</label>
+                    </div>
+                    <div class="text-field">
+                        <input type="password" id="passwordRegister" required>
+                        <span></span>
+                        <label for="passwordRegister">Password</label>
+                    </div>
+                    <div class="text-field">
+                        <input type="password" id="confirmPasswordRegister" required>
+                        <span></span>
+                        <label for="corfirmPasswordRegister">Konfirmasi Password</label>
+                    </div>
+                    <input type="submit" value="Register">
+                    <div class="login">
+                        Sudah pernah mendaftar? <a href="javascript:void(0)" id="loginDisini">Login disni</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -185,29 +186,33 @@
         <!-- Footer -->
 
         <footer>
-            <p>Created with
-                <?xml version="1.0" ?><svg id="Layer_1_1_" style="enable-background:new 0 0 16 16;" version="1.1"
-                    viewBox="0 0 16 16" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                    xmlns:xlink="http://www.w3.org/1999/xlink" width="1em" class="svg">
-                    <path
-                        d="M8.612,2.347L8,2.997l-0.612-0.65c-1.69-1.795-4.43-1.795-6.12,0c-1.69,1.795-1.69,4.706,0,6.502l0.612,0.65L8,16  l6.12-6.502l0.612-0.65c1.69-1.795,1.69-4.706,0-6.502C13.042,0.551,10.302,0.551,8.612,2.347z" />
-                </svg>
-                by Dimas Rizki
-            </p>
+            <p>Made by <span>Cangcorangsz</span> a.k.a Dimas Rizki</p>
+            <a href="https://www.instagram.com/cangcorangsz?igsh=MTJnMzBwZGU5OWNuaA==" target="_blank"><i
+                    class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/Cangcorangsz" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://x.com/dddimasriz?t=lc4FB0GqlBl9a5u5W4zeNw&s=09" target="_blank"><i
+                    class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/dimas-bajuri-019453260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                target="_blank"><i class="fa-brands fa-linkedin"></i></a>
         </footer>
     </div>
 
 
     <script>
         // Nav
+        const navButton = document.querySelector(".icon");
         const navMenu = document.getElementById("navMenu");
-
-
+        const iconi = document.querySelector(".icon i");
+        
         // Nav responsive
         function myFunction() {
             if (navMenu.className === "navMenu") {
                 navMenu.className += " responsive";
+                iconi.classList.add("fa-xmark");
+                iconi.classList.remove("fa-bars");
             } else {
+                iconi.classList.remove("fa-xmark");
+                iconi.classList.add("fa-bars");
                 navMenu.className = "navMenu";
             };
         };

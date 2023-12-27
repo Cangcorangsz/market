@@ -148,3 +148,15 @@ input[type="submit"]:hover {
 .login a:hover {
     text-decoration: underline;
 }
+
+@media (max-width: 768px) {
+    #akun .akun-container {
+        width: 85%;
+    }
+}
+
+@media (max-width: 425px) {
+    #akun .akun-container {
+        width: 80%;
+    }
+}

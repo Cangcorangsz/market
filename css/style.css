@@ -12,6 +12,28 @@ html {
     font-size: 1.5em;
 }
 
+a {
+    -webkit-tap-highlight-color: transparent;
+    /* Untuk perangkat berbasis WebKit seperti Chrome dan Safari */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /* Versi yang lebih luas untuk memastikan kompatibilitas */
+    -moz-tap-highlight-color: transparent;
+    /* Untuk Firefox */
+    -ms-tap-highlight-color: transparent;
+    /* Untuk Internet Explorer/Edge */
+}
+
+li {
+    -webkit-tap-highlight-color: transparent;
+    /* Untuk perangkat berbasis WebKit seperti Chrome dan Safari */
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    /* Versi yang lebih luas untuk memastikan kompatibilitas */
+    -moz-tap-highlight-color: transparent;
+    /* Untuk Firefox */
+    -ms-tap-highlight-color: transparent;
+    /* Untuk Internet Explorer/Edge */
+}
+
 .centerText {
     text-align: center;
 }
@@ -31,6 +53,7 @@ html {
     border: solid rgb(255, 255, 255) 1px;
     cursor: pointer;
 }
+
 /* Nav */
 
 nav {
@@ -88,16 +111,32 @@ nav .icon {
 }
 
 /* Footer */
-
-.svg {
-    fill: red;
-}
-
 footer {
+    padding: 1em 0;
+    width: 100%;
+    text-align: center;
     background-color: #273036;
     color: whitesmoke;
-    text-align: center;
-    padding: 0;
+}
+
+footer * {
+    color: #F5F5F5;
+}
+
+footer p {
+    font-size: 150%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+footer span {
+    font-weight: bold;
+}
+
+footer i {
+    font-size: 1.5em;
+    margin: 1em 0.5em 0 0.5em;
+    overflow: hidden;
 }
 
 /* <<<Responsives>>> */
@@ -168,6 +207,14 @@ footer {
 
 @media (max-width: 425px) {
     /* ---Mobile L--- */
+    footer p {
+        font-size: 100%;
+    }
+
+    footer i {
+        font-size: 1em;
+        margin: 1em 1em;
+    }
 
     .header {
         font-size: 1.1em;
